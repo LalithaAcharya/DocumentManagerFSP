@@ -1,0 +1,211 @@
+
+  
+ .feature{
+    /* margin-top: -20px;*/
+       margin-bottom: -40px;
+       background-color: transparent;
+       /* background-image:url("https://www.bizportals365.com/wp-content/uploads/dms-features.jpg");
+       background-repeat: no-repeat;
+       background-size: cover; */
+ 
+} 
+ 
+  
+ header {
+   /* margin: 80px 30px 75px; */
+   padding: 30px;
+   text-align: center;
+ }
+ 
+ header > h1 {
+   /* color:#1c1e3f; */
+   color:white;
+   font-weight: 2em;
+   font-size:3em;
+ }
+ 
+ header > h1 strong {
+   font-weight: 600;
+ }
+ 
+ header > p {
+   color:gray;
+   max-width: 520px;
+   margin: auto;
+ }
+ 
+ @media (max-width: 443px) {
+   header > h1 { font-size: 1.6em; }
+ }
+  
+main{
+    padding:20px;
+}
+ 
+ .cards-container {
+   /* List Styling Clean-Up */
+   list-style: none;
+   padding: 0; margin: 0;
+  color: whitesmoke;
+   /* Alignment */
+   margin: 40px auto;
+ }
+ 
+ .cards-container p{
+     color:whitesmoke;
+     font-size: 1.5em;
+ }
+#class{
+   /* background-color: rgb(0,35,51); */
+   background-image: url("https://i0.wp.com/krazytech.com/wp-content/uploads/2019/09/Benefits-of-Moving-to-an-Electronic-Document-Management-System.jpg?fit=1200%2C495&ssl=1&resize=1280%2C720");
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ 
+
+
+ .head{
+     color:whitesmoke;
+     width:200px;
+     margin-top:60px;
+     margin-left: 0px;
+ }
+ @media (min-width: 788px) {
+   .cards-container { 
+     width: 728px;
+   }
+  
+   .cards-container::after {
+     content: "";
+     clear: both;
+     display: table;
+   }
+ }
+ 
+ @media (min-width: 1166px) {
+   .cards-container {
+     width: 1106px;
+   }
+ }
+ 
+ 
+ [class$='feature-card'] {
+   position: relative;
+   box-sizing: border-box;
+   width: 350px; height: 250px;
+   margin: 0;
+   padding: 32px;
+ 
+  
+   border-radius: 10px;
+   border-top: solid 5px black;
+   box-shadow: 2px 5px 20px rgb(0,0,0,0.1);
+ }
+  
+ 
+ 
+ [class$='feature-card'] h2, [class$='feature-card'] p { margin: 0; }
+ 
+ [class$='feature-card'] img {
+   position: absolute;
+   bottom: 32px; right: 32px;
+ }
+ 
+ /*
+  * ### Top Border Colors Rules
+  */
+ 
+ [class$='feature-card'][class*='cyan'] {
+   border-color: hsl(180, 62%, 55%);
+ }
+ 
+ [class$='feature-card'][class*='red'] {
+   border-color: hsl(0, 78%, 62%);
+ }
+ 
+ [class$='feature-card'][class*='orange'] {
+   border-color: hsl(34, 97%, 64%);
+ }
+ 
+ [class$='feature-card'][class*='blue'] {
+   border-color: hsl(212, 86%, 64%);
+ }
+ 
+
+ 
+ @media (min-width: 788px) {
+   [class$='feature-card'] {
+     float: left;
+   }
+ 
+   @media (min-width: 1166px) {
+     
+     [class$='feature-card']:first-child {
+       margin: 140px 0;
+     }
+    
+     [class$='feature-card']:nth-child(2),
+     [class$='feature-card']:nth-child(3) {
+       margin: 0 22px;
+     }
+ 
+     [class$='feature-card']:last-child {
+       margin-top: -110px;
+     }
+ 
+     [class$='feature-card']:nth-child(3) {
+       margin-top: 30px;
+     }
+   }
+ 
+   @media (max-width: 1165px) {
+ 
+     [class$='feature-card']:nth-child(3),
+     [class$='feature-card']:nth-child(4) {
+       margin-top: 30px;
+     }
+ 
+     [class$='feature-card']:nth-child(2),
+     [class$='feature-card']:nth-child(4) {
+       margin-left: 28px;
+     }
+   }
+ }
+ 
+ @media (max-width: 787px) {
+ 
+   [class$='feature-card'] {
+     width: 300px; height: 220px;
+     margin: auto;
+   }
+ 
+   [class$='feature-card']:not(:first-child) {
+     margin-top: 22px;
+   }
+ }
+ 
+.image{
+   margin-right: 60px;
+   margin-bottom: -30px;
+}
+ footer { margin-top: 80px }
+ 
+ /*
+  * ## Attribution Watermark
+  */
+ 
+ .attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
+ 
+.btn1{
+width:100px;
+height:40px;
+border-radius: 20px;
+background-color: hsl(176, 68%, 64%);;
+color: white;
+margin-top: -20px;
+margin-left: 1200px;
+font-size: 1em;
+font-weight: 300;
+}

@@ -1,0 +1,39 @@
+
+ <div class="doc-container">
+    <div class="hero-image">
+        <div class="hero-text">
+            <h2 class="para">UPDATE THE FILE</h2>
+           <form (ngSubmit)="onSubmit()">
+               <div class="form-group">
+                   <label>Document Name</label>
+                   <input type="text" class="form-control" [(ngModel)]="doc.userName" name="userName">
+               </div>
+               <div class="form-group">
+                <label>File Name</label>
+                <input type="text" class="form-control" [(ngModel)]="doc.fileName" name="fileName">
+             </div>
+            <div class="form-group">
+                <label>Document Type </label>
+                    <select class="select" name="fileType" [(ngModel)]="doc.fileType">
+                           <option>Choose the document type ...</option>
+                           <option>Pdf</option>
+                           <option>docx</option>
+                           <option>xlsx</option>
+                    </select>
+            </div>
+            <div class="form-group">
+            <label>Choose the Document</label>
+  <input type="file" class="file" accept=".{{doc.fileType}}" (change)="onFileChange($event)" name="file" [(ngModel)]="doc.file" />
+  </div>
+            <div class="form-group">
+                <label>Document Discrption</label>
+                <input type="text" class="form-control" [(ngModel)]="doc.discrption" name="discrption">
+            </div>
+            <button type="submit" class="btn-default">Submit</button>
+           </form>
+            <button routerLink="/navbar" class="btn">BACK</button>
+            </div>
+        </div>
+      </div>
+
+

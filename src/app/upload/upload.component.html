@@ -1,0 +1,38 @@
+
+ <div class="doc-container">
+    <div class="hero-image">
+        <div class="hero-text">
+            <h2 class="para">UPLOAD THE FILE</h2>
+            <form class="form">
+               <div class="div2">
+                <label>Document Name</label>
+                 <input type="text" placeholder="User name" name="userName" [(ngModel)]="doc.userName"><br>
+                 <label>File Name</label>
+                 <input style="margin-left:70px;" type="text" placeholder="File Name" (change)="onFileChange($event)" name="fileName" [(ngModel)]="doc.fileName"><br>
+                 <label >Document Type &nbsp;
+                 <select  style="margin-left:45px;" class="select" name="fileType" [(ngModel)]="doc.fileType">
+                        <option>Choose the document type ...</option>
+                        <option>Pdf</option>
+                        <option>docx</option>
+                        <option>xlsx</option>
+                        <option>png</option>
+                        <option>jpg</option>
+                 </select>
+
+</label><br><br>
+<label  style="margin-left:-40px;">Choose the Document</label>
+  <input  style="margin-left:20px;" type="file" class="file" accept=".{{doc.fileType}}" (change)="onFileChange($event)" name="file" [(ngModel)]="doc.file" />
+<br><br>
+<label>Discrption</label>
+    <input  style="margin-left:70px;" type="text" placeholder="discrption" name="discription" [(ngModel)]="doc.discrption">
+    <br>
+    <br>
+    <button class="btn" (click)="onsubmit()">Submit</button>
+    </div>
+    </form>
+            <button routerLink="/navbar" class="btn">BACK</button>
+            </div>
+        </div>
+      </div>
+
+

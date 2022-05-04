@@ -1,0 +1,265 @@
+
+.para{
+    font-size: 3em;
+    margin-top: 10px;
+    padding:0px 20px;
+}
+
+.btn{
+    width:100px;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: hsl(176, 68%, 64%);
+    color:black;
+}
+.btn:hover{
+    background-color: whitesmoke;
+    color: #e91e63;
+}
+
+
+ 
+  .document{
+    margin-top: 0px;
+    margin-left: 300px;
+}
+  
+  .hero-image {
+    
+    background-image: 
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)),
+      
+     
+      url(https://www.bizportals365.com/wp-content/uploads/dms-features.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    height: 90.2vh;  
+    position: relative;
+  }
+  
+ 
+  .hero-text {
+    text-align: center;
+    width:80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    white-space: nowrap;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+                 0px 8px 13px rgba(0, 0, 0, 0.1),
+                 0px 16px 23px rgba(0, 0, 0, 0.1);
+    
+    
+  }
+  
+  .hero-text h1 {
+    font-size: 4.3em;
+    font-weight: 300;
+    animation: effect 2s linear infinite; 
+    
+  }
+
+  @keyframes effect { 
+	0% { 
+		color: #FFF;
+		-webkit-background-clip: text;
+	} 
+	100% { 
+		color: rgb(0,255,132); 
+		-webkit-background-clip: text; 
+	} 
+} 
+  
+  .hero-text p {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+  }
+  
+  .btn-default,
+  .btn-default:visited {
+    margin-top: 50px;
+    padding: 13px 25px;
+    border-radius: 5px;
+    border: none;
+    font-size: .9em;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    transition: background-color 0.1s;
+  }
+  
+  .btn-default:hover,
+  .btn-default:active {
+    background-color: #896600;
+  }
+
+  
+
+
+.rwd-table {
+  margin:40px 30px;
+  min-width: 1200px;
+  max-width: 100%;
+  border-collapse: collapse;
+  opacity: 0.8;
+  text-align: center;
+}
+
+.rwd-table tr:first-child {
+  border-top: none;
+  background: rgb(0,35,51);
+  color: #fff;
+}
+
+.rwd-table tr {
+  border-top: 1px solid #009688;
+  border-bottom: 1px solid #009688;
+  text-align: center;
+}
+.rwd-table tr:hover{
+   background-color: whitesmoke;
+   color: black;
+}
+
+.rwd-table tr:nth-child(odd):not(:first-child) {
+  background-color: #ebf3f9;
+}
+
+.rwd-table th {
+  background-color:hsl(176, 68%, 64%) ;
+  color:black;
+}
+
+.rwd-table td {
+  display: block;
+  text-align: center;
+}
+
+.rwd-table td:first-child {
+  margin-top: .5em;
+}
+
+.rwd-table td:last-child {
+  margin-bottom: .5em;
+}
+
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 120px;
+  display: inline-block;
+  color: #000;
+}
+
+.rwd-table th,
+.rwd-table td {
+  text-align: left;
+}
+
+.rwd-table {
+  color: #333;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.rwd-table tr {
+  border-color: #bfbfbf;
+}
+
+.rwd-table th,
+.rwd-table td {
+  padding: .5em 1em;
+}
+@media screen and (max-width: 601px) {
+  .rwd-table tr:nth-child(2) {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .rwd-table tr:hover:not(:first-child) {
+    background-color: #d8e7f3;
+  }
+  .rwd-table td:before {
+    display: none;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child,
+  .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child,
+  .rwd-table td:last-child {
+    padding-right: 0;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    padding: 1em !important;
+  }
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 2.4em;
+  color: #f2f2f2;
+}
+.container {
+  display: block;
+  text-align: center;
+}
+h3 {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  color: #cecece;
+}
+h3:before {
+  content: "\25C0";
+  position: absolute;
+  left: -50px;
+  -webkit-animation: leftRight 2s linear infinite;
+  animation: leftRight 2s linear infinite;
+}
+h3:after {
+  content: "\25b6";
+  position: absolute;
+  right: -50px;
+  -webkit-animation: leftRight 2s linear infinite reverse;
+  animation: leftRight 2s linear infinite reverse;
+}
+@-webkit-keyframes leftRight {
+  0%    { -webkit-transform: translateX(0)}
+  25%   { -webkit-transform: translateX(-10px)}
+  75%   { -webkit-transform: translateX(10px)}
+  100%  { -webkit-transform: translateX(0)}
+}
+@keyframes leftRight {
+  0%    { transform: translateX(0)}
+  25%   { transform: translateX(-10px)}
+  75%   { transform: translateX(10px)}
+  100%  { transform: translateX(0)}
+}
+
+.my-pagination /deep/ .ngx-pagination .current {
+  background: darkslateblue;
+}
+.my-pagination{
+  visibility: visible;
+}

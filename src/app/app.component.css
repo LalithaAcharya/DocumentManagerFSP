@@ -1,0 +1,38 @@
+.header{
+	display:flex;
+	justify-content: space-between;
+	height:70px;
+	align-items: center;
+	padding: 0 20px;
+	background-color: transparent;
+	color:white;
+}
+
+.btntop {
+	text-decoration: none;
+	color:white;
+	font-size: 1.2em;
+	border:1px solid white;
+	padding:5px 15px;
+	margin-left: 20px;
+	border-radius: 20px;
+	font-weight: 300;
+}
+.btntop:hover{
+	background-color:hsl(176, 68%, 64%);
+	border:1px solid white;
+	padding:5px 15px;
+	margin-left: 20px;
+	border-radius: 20px;
+	color:black;
+}
+.flex{
+	display:flex;
+	flex-direction: row;
+	margin-top: 6px;
+	padding: 10px;
+}
+.flex h1{
+	margin-left: 10px;
+	margin-top: 3px;
+}

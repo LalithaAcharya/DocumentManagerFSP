@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="left">
+      <!-- <img src="../assets/pic1.png" class="animation a6" style="margin: 0 auto 10px; width: 150px;"> -->
+      <div class="animation a6"><i class="fa fa-user" aria-hidden="true"></i></div>
+      <div class="header">
+        <h2 class="animation a1">Login</h2>
+      </div>
+<div id="loginpage">
+    <div id="content">
+        <div class="text-center">
+
+          <h6 class="mb-3">Please enter email & password !!</h6>
+        </div>
+          <form>
+            <form #loginform="ngForm" (ngSubmit)="loginUser()">
+              <small class="danger">{{msg}}</small>
+              <div class="mb-3">
+                <!-- <label for="email" class="form-label">Email address</label> -->
+                <input  placeholder="Email" class="form-field animation a4" type="email" name="emailId" [(ngModel)]="user.emailId"  id="email" aria-describedby="emailHelp" required #email="ngModel" [class.is-invalid]="email.invalid">
+                <!-- <span class="text-danger" style="font-size:12px;" *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">*Email Id is required</span> -->
+              </div>
+              <div class="mb-3">
+                <!-- <label for="pwd" class="form-label">Password</label> -->
+                <input  placeholder="Password" type="password" class="form-field animation a4" id="pwd" name="password" [(ngModel)]="user.password">
+                <!-- <span class="text-danger" style="font-size:12px;" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">*Password is required</span> -->
+              </div>
+             <button type="submit" class="button animation a6">Login</button>
+              <p class="text-center" style="margin-top:50px;margin-left:120px;color:wheat">New user?<a routerLink="/register">Register here</a>.</p>
+            </form>
+          </form>
+    </div>
+  </div>
+</div>
+<div id="right"></div>
+</div>

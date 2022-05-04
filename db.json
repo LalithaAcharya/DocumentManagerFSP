@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "Name": "Pragathi",
+      "DocName": "resumne",
+      "DocType": "Word",
+      "DocFile": "C:\\fakepath\\Punya H res C V.docx"
+    },
+    {
+      "id": 3,
+      "Name": "Lalitha",
+      "DocName": "result",
+      "DocType": "Pdf",
+      "DocFile": "C:\\fakepath\\lalith r Resume (1).docx"
+    },
+    {
+      "id": 5,
+      "Name": "Rathna",
+      "DocName": "payslip",
+      "DocType": "Pdf",
+      "DocFile": "C:\\fakepath\\payslip (1).pdf"
+    },
+    {
+      "id": 6,
+      "Name": "lalli",
+      "DocName": "laaa",
+      "DocType": "Pdf",
+      "DocFile": "C:\\fakepath\\lalith r Resume -converted.pdf"
+    },
+    {
+      "id": 7,
+      "Name": "lalitha",
+      "DocName": "certificate",
+      "DocType": "Word",
+      "DocFile": "C:\\fakepath\\dummy_file.pdf"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  },
+  "signUpUsers": {
+    "fullName": "Pragathi",
+    "email": "pragathi@gmail.com",
+    "password": "pragathi123",
+    "mobile": "96325874120"
+  }
+}

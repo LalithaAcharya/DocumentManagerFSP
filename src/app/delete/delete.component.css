@@ -1,0 +1,267 @@
+
+.headH1 {
+  margin-top:10px;
+  text-align: center;
+  font-size: 4.3em;
+  font-weight: 300;
+  animation: effect 2s linear infinite; 
+  
+}
+
+@keyframes effect { 
+0% { 
+  color: #FFF;
+  -webkit-background-clip: text;
+} 
+100% { 
+  color: rgb(0,255,132); 
+  -webkit-background-clip: text; 
+} 
+} 
+section {
+    
+    --text-color-light: #FFF;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --normal-font-size: .938rem;
+    --smaller-font-size: .75rem;
+    --box-shadow-inset: inset 0 22px 56px -36px rgba(255, 255, 255, .5), 
+                        inset 0 4px 5px -4px rgba(255, 255, 255, 1), 
+                        inset 0 -31px 34px -32px rgba(96, 68, 144, .3), 
+                        inset 0 39px 50px -34px rgba(202, 172, 255, .3), 
+                        inset 0 2px 9px rgba(154, 146, 210, .3), 
+                        inset 0 1px 10px rgba(227, 222, 255, .2);
+
+    --drop-shadow: 0 0 8px rgba(161, 165, 247, .8);
+
+    --text-shadow: 0 0 8px rgba(161, 165, 247, .8);
+
+    --box-shadow-inset-button: inset 0 2px 7px -9px rgba(255, 255, 255, .5), 
+                               inset 0 1px 2px -1px rgba(255, 255, 255, 1), 
+                               inset 0 -20px 16px -32px rgba(96, 68, 144, .3), 
+                               inset 0 28px 25px -24px rgba(202, 172, 255, .3), 
+                               inset 0 1px 4px rgba(154, 146, 210, .3), 
+                               inset 0 1px 10px rgba(227, 222, 255, .2);
+    --box-shadow-inset-hover: inset 0 19px 28px -18px rgba(255, 255, 255, .5), 
+                              inset 0 4px 6px -3px rgba(255, 255, 255, 1), 
+                              inset 0 -51px 44px -42px rgba(96, 68, 144, .3), 
+                              inset 0 59px 60px -32px rgba(202, 172, 255, .3), 
+                              inset 0 4px 16px rgba(154, 146, 210, .3), 
+                              inset 0 2px 25px rgba(227, 222, 255, .23);
+
+    --drop-shadow-hover:  0 0 14px rgba(161, 165, 247, .8);
+
+    --text-shadow-hover: 0 0 14px rgba(161, 165, 247, .8);
+
+    --box-shadow-inset-button-hover: inset 0 4px 7px -4px rgba(255, 255, 255, .5), 
+                                     inset 0 1px 2px -1px rgba(255, 255, 255, 1), 
+                                     inset 0 -20px 16px -32px rgba(96, 68, 144, .3), 
+                                     inset 0 28px 25px -20px rgba(202, 172, 255, .3), 
+                                     inset 0 1px 4px rgba(154, 146, 210, .3), 
+                                     inset 0 1px 16px rgba(227, 222, 255, .2);
+    --filter-blur: blur(100px);
+}
+
+@media screen and (min-width: 1024px) {
+
+    :root {
+        --normal-font-size: 1rem;
+    }
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+section {
+    font-size: var(--normal-font-size);
+}
+
+h1, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bd-container {
+    max-width: 100%;
+   
+}
+
+
+.neon,
+.neon__container{
+    display: grid;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.neon {
+    padding: 2.5rem 0;
+}
+
+.neon__container {
+    grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+    row-gap: 3.5rem;
+    column-gap: 2.5rem;
+}
+
+.neon__card {
+    background-image: linear-gradient(to right bottom, #121822, #014057, #006f82, #00a197, #31d291);background-image: linear-gradient(to right bottom, #2fbaa5, #00919b, #006882, #18405d, #191e32);
+    color: var(--text-color-light);
+    box-shadow: var(--box-shadow-inset);
+    backdrop-filter: var(--filter-blur);
+    padding: 3.5rem 1.5rem 2rem;
+    border-radius: 3rem;
+    text-align: center;
+    line-height: 40px;
+}
+
+.neon__icon {
+    width: 320px;
+    fill: var(--text-color-light);
+    filter: drop-shadow(var(--drop-shadow));
+    margin-bottom: .25rem;
+}
+
+.neon__title, .neon__description {
+    text-shadow: var(--text-shadow);  
+}
+
+.neon__title {
+    font-size: var(--biggest-font-size);
+    margin-bottom: .25rem;
+}
+
+
+.neon__description {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    word-wrap: break-word;
+}
+
+.neon__button-icon {
+    width: 1.2rem;
+    margin-left: .5rem;
+    fill: var(--text-color-light);
+    filter: drop-shadow(var(--drop-shadow));
+}
+
+.neon__button {
+  margin-left: 65px;
+    box-shadow: var(--box-shadow-inset-button);
+    color: black;
+    background-color: whitesmoke;
+    text-shadow: var(--text-shadow);
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem;
+    border-radius: 1rem;
+    font-size:1.5em;
+}
+
+.neon__button:hover {
+    background-color: darkcyan;
+    box-shadow: var(--box-shadow-inset-button-hover);
+}
+
+.para5{
+    margin-top: 100px;
+}
+
+.neon__card:hover {
+    box-shadow: var(--box-shadow-inset-hover);
+}
+
+.neon__card:hover .neon__icon {
+    filter: drop-shadow(var(--drop-shadow-hover));
+}
+
+.neon__card:hover .neon__title,
+.neon__card:hover .neon__description {
+    text-shadow: var(--text-shadow-hover);
+}
+
+.neon__card, 
+.neon__icon, 
+.neon__title, 
+.neon__description, 
+.neon__button {
+    transition: .3s;
+}
+
+
+@media screen and (max-width: 359px) {
+    .neon__container {
+        grid-template-columns: 1fr;
+    }
+    .neon__card {
+        padding: 2rem 1rem 1.5rem;
+        border-radius: 2rem;
+    }
+    .neon__icon {
+        width: 80px;
+    }
+    .neon__title {
+        font-size: var(--h1-font-size);
+    }
+    .neon__description {
+        font-size: var(--smaller-font-size);
+    }
+    .neon__button {
+      width:200px;
+        padding: 20px;
+        font-size: var(--smaller-font-size);
+        border-radius: .6rem;
+    }
+    .neon__button-icon {
+        width: 1rem;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .bd-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .neon {
+        height: 100vh;
+    }
+}
+
+.div{
+  text-align: end;
+  margin-top: -40px;
+}
+.btn6{
+ text-align: end;
+ border-radius: 10px;
+ background: transparent;
+ border:1px solid transparent;
+ color:white;
+}
+.btn6:hover{
+    color:orangered;
+}
+.fa-close{
+  font-size: 2em;
+  padding:2px 4px;
+}
+.fa-edit{
+  font-size:1em;
+  margin-top:2px;
+  margin-left: 8px;
+}
+
+.btn{
+  width:100px;
+  padding:10px 10px;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}

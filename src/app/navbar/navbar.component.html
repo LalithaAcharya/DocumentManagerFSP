@@ -1,0 +1,22 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="menu">
+    <div class="menu-icon">
+      <div class="logo"><a routerLink="/navbar"><i class="fa-solid fa-house-user"></i></a></div>
+    <!-- <div class="logo"><i class="fa fa-file"></i></div> -->
+    <i class="fa-solid fa-align-left" id='botao'></i>
+    </div>
+    
+    <nav class="nav">
+      <ul>
+        <a routerLink="/dashboard"><li><i class="fa fa-dashboard"></i> DASHBOARD</li></a>
+        <a routerLink="/upload"><li><i class="fa fa-upload" aria-hidden="true"></i> UPLOAD</li></a>
+        <a routerLink="/edit"><li><i class="fa fa-arrow-down" aria-hidden="true"></i>DOWNLOAD</li></a>
+        <a routerLink="/delete"><li><i class="fa fa-file-pdf-o" aria-hidden="true"></i>DOCUMENTS</li></a>
+        <!-- <a routerLink="/view"><li><i class="fa fa-eye" aria-hidden="true"></i> VIEW</li></a> -->
+        <a routerLink=""  (click)="confirmBox()"><li><i class="fa fa-sign-out"></i> LOGOUT</li></a>
+        <!-- <img class="image10" src="https://thumbs.dreamstime.com/b/document-management-dms-system-digital-rights-142839832.jpg" width="400px" height="300px"> -->
+      </ul>
+    </nav>
+  </div>
+  <app-home></app-home>

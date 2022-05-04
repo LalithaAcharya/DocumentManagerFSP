@@ -1,0 +1,17 @@
+<div class="div4"> 
+    <h1 class="headH1">DOCUMENTS</h1>
+<div class="cardContainer" >
+    <div class="cardBox" *ngFor="let file of doc">
+        <div class="card">
+            <i class="fa fa-file-pdf-o"></i>
+          <h2>{{file.userName}}</h2>
+          <p>{{file.discrption}}</p>
+          <div class="content">
+              <p class="para5">Want to download the file?</p>
+            <a href="" download="{{file.fileName}}"><button class="btn8">Download</button></a><br>
+          </div>
+        </div>
+      </div>
+</div>
+<button routerLink="/navbar" class="btn">Back</button>
+</div>

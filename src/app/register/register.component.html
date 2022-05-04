@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="left">
+      <!-- <img src="../assets/pic1.png" class="animation a6" style="margin: 0 auto 10px; width: 100px"> -->
+      <div class="animation a6"><i class="fa fa-user" aria-hidden="true"></i></div>
+      <div class="header">
+        <h2 class="animation a1">Register</h2>
+      </div>
+
+<div id="loginpage">
+    <div id="content">
+        <!-- <div class="text-center">
+          
+          
+        </div> -->
+          <form>
+            <form #Registerform (ngSubmit)="signUp()">
+              <div class="mb-3">
+                <!-- <label for="name" class="form-label">Name</label> -->
+                <input  placeholder="Enter your name" type="text" class="form-field animation a3" id="name" name="userName" [(ngModel)]="user.userName">
+              </div>
+              <div class="mb-3">
+                <!-- <label for="email" class="form-label">Email address</label> -->
+                <input placeholder="Enter your email" type="email"class="form-field animation a3" id="email" aria-describedby="emailHelp" name="emailId" [(ngModel)]="user.emailId">
+              </div>
+              <div class="mb-3">
+                <!-- <label for="pwd" class="form-label">Password</label> -->
+                <input  placeholder="Enter your password" type="password" class="form-field animation a4" id="pwd" name="password" [(ngModel)]="user.password">
+              </div>
+              <button class="button animation a6" type="submit">Register</button>
+              <p class="text-center" style="margin-top:10px;">Already registered?Click here to <a routerLink="/login">Login</a>.</p>
+            </form>
+          </form>
+    </div>
+  </div> 
+</div>
+<div id="right"></div>
+</div>
