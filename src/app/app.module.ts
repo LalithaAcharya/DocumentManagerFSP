@@ -42,12 +42,12 @@ import { NgxDocViewerModule } from 'ngx-doc-viewer';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
     HttpClientModule,
     NgToastModule,
     FormsModule,
     NgxPaginationModule,
-    NgxDocViewerModule
+    NgxDocViewerModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

@@ -3,7 +3,6 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Doc } from '../Doc';
 
-import { ApiService } from '../shared/api.service';
 
 @Component({
   selector: 'app-view',

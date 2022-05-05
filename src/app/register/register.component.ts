@@ -19,14 +19,13 @@ export class RegisterComponent implements OnInit {
   msg='';
   public signUpForm !: FormGroup;
 
-  constructor(private formBuilder:FormBuilder, private http:HttpClient,private toast: NgToastService, private router:Router,private service:RegistrationService) { }
+  constructor(private formBuilder:FormBuilder, private http:HttpClient,private toast: NgToastService, private router:Router,private service:RegistrationService,private toster:NgToastService) { }
 
   ngOnInit(): void {
     this.signUpForm = this.formBuilder.group({
       fullName:['',Validators.required],
       email:['',Validators.required],
-      password:['',Validators.required],
-      mobile:['',Validators.required]
+      password:['',Validators.required]
     })
   }
 
@@ -35,6 +34,8 @@ export class RegisterComponent implements OnInit {
     data=>{
       console.log("response recived");
       this.msg="Registration successfull";
+      this.toster.success({detail:"SUCCESS",summary:'Login Successfull! Welcome to Doc-key',duration:5000});
+      this.router.navigate(['/login']);
     },
     error=>{
       console.log("exception occured");

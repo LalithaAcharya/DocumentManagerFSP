@@ -5,11 +5,7 @@ import Swal from 'sweetalert2';
 import { Doc } from '../Doc';
 
 import { FileService } from '../file.service';
-// import { ApiService } from '../shared/api.service';
-// import { Document } from '../shared/model/document';
-// import { DetailsDocument } from '../shared/model/documentDetail';
-// import { FindDocument } from '../shared/model/findDocument';
-// import { UpdateService } from '../shared/update.service';
+
 @Component({
   selector: 'app-update',
   templateUrl: './update.component.html',

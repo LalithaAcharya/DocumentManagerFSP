@@ -18,7 +18,6 @@ private url =  "http://localhost:8089"
 
 public delval(id:number):Observable<any>{
   return this.http.delete<any>(`${this.url}/deldoc/${id}`)
-  // /delbook/{bookid}
 }
 
 public addval(Doc:Object):Observable<Object>{

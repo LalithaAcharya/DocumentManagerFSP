@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { Document } from '../shared/model/document';
-import { ApiService } from '../shared/api.service';
 import { Router, RouterLink } from '@angular/router';
 import Swal from 'sweetalert2';
 import { Doc } from '../Doc';

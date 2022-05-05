@@ -3,7 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Doc } from '../Doc';
 import { FileService } from '../file.service';
-import { ApiService } from '../shared/api.service';
 
 
 @Component({

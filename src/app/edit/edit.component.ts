@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { Doc } from '../Doc';
 import { FileService } from '../file.service';
-import { ApiService } from '../shared/api.service';
+
 
 
 @Component({

@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 import { Doc } from '../Doc';
 import { FileService } from '../file.service';
-import { ApiService } from '../shared/api.service';
+
 
 @Component({
   selector: 'app-delete',
@@ -14,7 +14,6 @@ import { ApiService } from '../shared/api.service';
 export class DeleteComponent implements OnInit {
   public doc!:Doc[];
   fileName: any;
-  p!:any;
 
   constructor(private es:FileService,private router:Router) { }
 

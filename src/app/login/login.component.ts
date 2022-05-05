@@ -15,11 +15,15 @@ export class LoginComponent implements OnInit {
 
   user=new User();
   msg='';
-  constructor(private service:RegistrationService,private router:Router,private toster:NgToastService) { }
+  public loginForm !: FormGroup;
+  constructor(private service:RegistrationService,private formBuilder:FormBuilder,private router:Router,private toster:NgToastService) { }
 
 
   ngOnInit(): void {
-    
+    this.loginForm = this.formBuilder.group({
+      email:['',Validators.required],
+      password:['',Validators.required]
+    })
   }
 
   loginUser(){
